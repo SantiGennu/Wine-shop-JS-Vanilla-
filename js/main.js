@@ -57,7 +57,7 @@ function showProducts(wineList) {
 
 }
 
-showProducts(wineList)
+// showProducts(wineList)
 
 function addToCart(item) {
 
@@ -125,10 +125,14 @@ function filterProducts() {
 
             })
             button.classList.add("active")
-            let btn = button.getAttribute("name")
-            console.log(btn)
-
-
+            let variant = button.getAttribute("name")
+            wineList.map(w=>console.log(w.variaty))
+            if (variant == "All") {
+                showProducts(wineList)
+            } else {
+                let wineFilter = wineList.filter(wine => (wine.variaty).toLowerCase().includes(variant.toLowerCase()))
+                showProducts(wineFilter)
+            }
 
 
         })
