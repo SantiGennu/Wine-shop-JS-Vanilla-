@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+#card-title {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.btn {
+    height: 40px;
+    margin-right: 10px;
+    color: black !important;
+    display: flex;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+
+}
+
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    margin: 0 30%;
+    width: 30%;
+
+}
+
+#price {
+    display: flex;
+    justify-content: center;
+}
+
+#variaty {
+    display: flex;
+    justify-content: center;
+}
+
+#container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.cart-container {
+    border-left: 5px solid rgb(4, 6, 6);
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete {
+    color: rgb(203, 0, 0) !important;
+    border: none;
+    background-color: #ffffff;
+
+}
+
+.selection {
+    text-align: center;
+
+}
+
+#selectType {
+    width: 50%;
+}
+
+.button-value {
+    border: 2px solid #6759ff;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #6759ff;
+    color: #ffffff;
+}
+
+.hide {
+    display: none;
+}
