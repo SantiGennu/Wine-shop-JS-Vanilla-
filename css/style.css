@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
 .cards {
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 6px 3px 3px rgb(210, 206, 206);
+
+}
+
+
+body {
+    color: #490040;
+}
+
+.container-fluid {
+    background-color: #490040;
 
 }
 
@@ -18,7 +33,12 @@
 
 }
 
+.nav-link {
+    width: max-content;
+}
+
 .btn {
+
     height: 40px;
     margin-right: 10px;
     color: black !important;
@@ -32,10 +52,76 @@
 
 
 .btn-primary {
+    width: max-content;
     display: flex;
     justify-content: center;
     margin: 0 30%;
-    width: 30%;
+
+
+}
+
+#button {
+    background-color: white;
+
+
+
+}
+
+div ul li #button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#search-input {
+    width: max-content;
+    width: 25%;
+    padding: 0.6%;
+    border: 5px solid #490040;
+
+
+}
+
+
+
+.navbar-toggler {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border: 1px solid #ffffff;
+}
+
+#search {
+    color: white;
+    background-color: #490040;
+}
+
+a.navbar-brand {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: #ffffff !important;
+}
+
+a.nav-link {
+    color: white;
+}
+
+.material-icons {
+    color: #490040;
 
 }
 
@@ -55,10 +141,11 @@
     justify-content: center;
 
 
+
 }
 
 .cart-container {
-    border-left: 5px solid rgb(4, 6, 6);
+    border-left: 5px solid rgb(69, 179, 179);
     margin: 5px 0;
     padding: 5px 10px;
     display: flex;
@@ -82,19 +169,39 @@
 }
 
 .button-value {
-    border: 2px solid #6759ff;
+    border: 2px solid #490040;
     padding: 1em 2.2em;
     border-radius: 3em;
     background-color: transparent;
-    color: #6759ff;
+    color: #490040;
     cursor: pointer;
 }
 
 .active {
-    background-color: #6759ff;
+    background-color: #490040;
     color: #ffffff;
 }
 
 .hide {
     display: none;
+}
+
+.minus {
+    cursor: pointer
+}
+
+.plus {
+    cursor: pointer
+}
+
+.description h1 {
+    background-color: #490040;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 5%;
+}
+
+main {
+    color: #490040;
+    background-color: #490040;
 }
