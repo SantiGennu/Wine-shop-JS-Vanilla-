@@ -9,6 +9,15 @@ let buttons = document.querySelectorAll(".button-value")
 let cards = document.querySelectorAll(".card")
 
 
+const getDataFromJson = async()=> {
+    try {
+        const response = await fetch("products.json")
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.log("Tuvimos un error al obtener el .JSON",error)
+    }
+}
 
 // const showProducts = async () => {
 //     const response = await fetch("../products.json")
@@ -182,11 +191,12 @@ let cards = document.querySelectorAll(".card")
 // actualizeProducts()
 
 
-showProducts(wineList)
 
-function showProducts(wineList) {
+
+async function showProducts(data) {
     container.innerHTML = ""
-    wineList.forEach(item => {
+    const list = await data
+    list.forEach(item => {
         let div = document.createElement("div")
         div.className = "col-12 col-md-4 "
         div.classList.add("cards")
@@ -225,7 +235,7 @@ function showProducts(wineList) {
 
 }
 
-
+showProducts(getDataFromJson())
 
 function addToCart(item) {
 
