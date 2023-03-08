@@ -16,6 +16,12 @@ h3 {
 
 }
 
+.card img {
+    max-width: 390px;
+    max-height: 390px;
+
+}
+
 
 body {
     background-color: #f1fffe9d;
@@ -320,15 +326,6 @@ main {
     margin: auto;
     color: white !important;
 }
-
-/* .form textarea {
-    margin-block-end: 2em;
-    font-family: inherit;
-} */
-
-/* input::-webkit-input-placeholder {
-    color: #0F0A0A88;
-} */
 
 
 .contact {

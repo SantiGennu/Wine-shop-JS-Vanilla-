@@ -101,17 +101,17 @@
     },
     {
         "id": 11,
-        "image": "/img/andeluna 1300.jpg",
+        "image": "/img/andeluna torrontes.jpg",
         "quantity": 1,
-        "name": "Andeluna 1300",
+        "name": "Andeluna",
         "type": "white wine",
-        "variaty": "Sauvignon Blanc",
+        "variaty": "Torrontes",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     },
     {
         "id": 12,
-        "image": "/img/casa boer white.jpg",
+        "image": "/img/casa boher chardonnay.jpg",
         "quantity": 1,
         "name": "Casa Boher",
         "type": "white wine",
@@ -141,9 +141,9 @@
     },
     {
         "id": 15,
-        "image": "/img/la celia rose.jpg",
+        "image": "/img/norton.jpg",
         "quantity": 1,
-        "name": "La Celia",
+        "name": "Norton",
         "type": "rosé",
         "variaty": "malbec",
         "price": 1000,
@@ -171,11 +171,11 @@
     },
     {
         "id": 18,
-        "image": "/img/saurus estate rose.jpg",
+        "image": "/img/trumpeter rose.jpg",
         "quantity": 1,
-        "name": "Saurus Estate",
+        "name": "Trumpeter",
         "type": "rosé",
-        "variaty": "Pinot noir",
+        "variaty": "Malbec",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     }

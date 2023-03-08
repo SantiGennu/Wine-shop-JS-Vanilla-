@@ -23,16 +23,16 @@ const getDataFromJson = async () => {
 
 
 const wine = getDataFromJson()
-console.log(wine)
+
 
 
 async function showProducts(data) {
     container.innerHTML = ""
     const list = await data
-    console.log(list)
+
     list.forEach(item => {
         let div = document.createElement("div")
-        div.className = "col-12 col-md-4 "
+        div.className = "col-12 col-sm-6 col-md-4 "
         div.classList.add("cards")
         div.innerHTML = `
                 <div class="card">
@@ -71,7 +71,7 @@ async function showProducts(data) {
 
 
 showProducts(wine)
-console.log(wine)
+
 
 async function addToCart(item) {
 
