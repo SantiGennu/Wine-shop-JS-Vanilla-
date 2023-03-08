@@ -1,5 +1,4 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || []
-
 let container = document.getElementById("container-cards")
 let cartContainer = document.getElementById("cart-container")
 let counter = document.getElementById("counter")
@@ -9,6 +8,19 @@ let buttons = document.querySelectorAll(".button-value")
 let cards = document.querySelectorAll(".card")
 
 
+const getDataFromJson = async () => {
+    try {
+        const response = await fetch("products.json")
+        const data = await response.json()
+        return data
+
+    } catch (error) {
+        console.log("Tuvimos un error al obtener el .JSON", error)
+    }
+}
+
+const wine = getDataFromJson()
+console.log(wine)
 
 // const showProducts = async () => {
 //     const response = await fetch("../products.json")
@@ -182,11 +194,13 @@ let cards = document.querySelectorAll(".card")
 // actualizeProducts()
 
 
-showProducts(wineList)
 
-function showProducts(wineList) {
+// showProducts(wineList)
+async function showProducts(data) {
     container.innerHTML = ""
-    wineList.forEach(item => {
+    const list = await data
+    console.log(list)
+    list.forEach(item => {
         let div = document.createElement("div")
         div.className = "col-12 col-md-4 "
         div.classList.add("cards")
@@ -205,8 +219,8 @@ function showProducts(wineList) {
 
               `
         container.appendChild(div)
-        let btn = document.getElementById(`${item.id}`)
 
+        let btn = document.getElementById(`${item.id}`)
         btn.addEventListener("click", () => {
             Swal.fire({
                 position: 'top-end',
@@ -225,13 +239,14 @@ function showProducts(wineList) {
 
 }
 
+showProducts(wine)
+console.log(wine)
 
+async function addToCart(item) {
 
-function addToCart(item) {
-
-
-    let wine = wineList.find(wine => wine.id === item.id)
-    cart.push(wine)
+    const wineList = await wine
+    const add = wineList.find(wine => wine.id === item.id)
+    cart.push(add)
 
     actualizeProducts()
 
@@ -252,12 +267,13 @@ function showCart() {
                     <p> ${item.type}</p>
                      <p> ${item.variaty}</p>
                     <p> $${item.price} </p>
-                     <span class="minus"> - </span>
-                    <p id="quantity">${item.quantity}</p>
-                    <span class="plus"> + </span>
+                     <span class="minus material-symbols-outlined">remove</span>
+                    <span id="quantity"> <span class="itemQty">${item.quantity}</span></span>
+                  <span class="plus material-symbols-outlined">add</span>
                      <p id="price">${item.quantity * item.price}</p>
                     <button class="delete" id="btn-delete${item.id}"><span class="material-symbols-outlined">
-                    delete </span></button> `
+                    delete </span></button>
+                    <span class="done material-symbols-outlined">done</span> `
             cartContainer.appendChild(div)
 
             let minus = div.querySelector(".minus")
@@ -308,22 +324,22 @@ function actualizeProducts() {
 
 }
 
-function filterProducts() {
+async function filterProducts() {
+    const filter = await wine
 
     buttons.forEach((button) => {
         button.addEventListener("click", () => {
             buttons.forEach((button) => {
                 button.classList.remove("active")
 
-
             })
             button.classList.add("active")
-            let variaty = button.getAttribute("name")
-            wineList.map(w => (w.variaty))
-            if (variaty == "All") {
-                showProducts(wineList)
+            let type = button.getAttribute("name")
+            filter.map(w => (w.variaty))
+            if (type == "All") {
+                showProducts(filter)
             } else {
-                let wineFilter = wineList.filter(wine => (wine.variaty).toLowerCase().includes(variaty.toLowerCase()))
+                let wineFilter = filter.filter(wine => (wine.type).toLowerCase().includes(type.toLowerCase()))
                 showProducts(wineFilter)
             }
 
@@ -333,11 +349,12 @@ function filterProducts() {
 }
 
 
-function filterSearch(e) {
+async function filterSearch(e) {
+    const filtro = await wine
 
-    let wineFilter = wineList.filter(wine => (wine.name).toLowerCase().includes(e.target.value))
+    let wineFilter = filtro.filter(wine => (wine.name).toLowerCase().includes(e.target.value))
     showProducts(wineFilter)
-    console.log(e.target.value)
+
 
 }
 
@@ -353,3 +370,14 @@ saveLocalStorage = () => {
 
 }
 actualizeProducts()
+
+const $form = document.querySelector("#form")
+const $mailTo = document.querySelector("#mailTo")
+$form.addEventListener("submit", handleSubmit)
+
+function handleSubmit(e) {
+    e.preventDefault()
+    const form = new FormData(this)
+    $mailTo.setAttribute('href', `mailto:me@santigennu5.com?subject=name ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+    $mailTo.click()
+}

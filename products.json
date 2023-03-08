@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "image": "/img/alamos malbec.jpg",
+        "image": "./img/alamos malbec.jpg",
         "quantity": 1,
         "name": "Alamos",
-        "type": "red",
+        "type": "red wine",
         "variaty": "malbec",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
@@ -14,7 +14,7 @@
         "image": "/img/emilia malbec.jpg",
         "quantity": 1,
         "name": "Emilia",
-        "type": "red",
+        "type": "red wine",
         "variaty": "malbec",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
@@ -24,17 +24,17 @@
         "image": "/img/estiba malbec.jpg",
         "quantity": 1,
         "name": "Estiba",
-        "type": "red",
+        "type": "red wine",
         "variaty": "malbec",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     },
     {
         "id": 4,
-        "image": "/img/rutini malbec.png",
+        "image": "/img/rutini malbec.jpg",
         "quantity": 1,
         "name": "Rutini",
-        "type": "red",
+        "type": "red wine",
         "variaty": "malbec",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
@@ -44,17 +44,17 @@
         "image": "/img/zuccardi malbec.jpg",
         "quantity": 1,
         "name": "Zuccardi",
-        "type": "red",
+        "type": "red wine",
         "variaty": "malbec",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     },
     {
         "id": 6,
-        "image": "/img/azul malbec.png",
+        "image": "/img/azul malbec.jpg",
         "quantity": 1,
         "name": "Azul",
-        "type": "red",
+        "type": "red wine",
         "variaty": "malbec",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
@@ -64,7 +64,7 @@
         "image": "/img/luigi bosca white.jpg",
         "quantity": 1,
         "name": "Luigi Bosca",
-        "type": "white",
+        "type": "white wine",
         "variaty": "Blend",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
@@ -74,37 +74,37 @@
         "image": "/img/rutini chardonay.jpg",
         "quantity": 1,
         "name": "Rutini",
-        "type": "White",
+        "type": "white wine",
         "variaty": "Chardonay",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     },
     {
         "id": 9,
-        "image": "/img/linda flor chardonay.webp",
+        "image": "/img/linda flor.jpg",
         "quantity": 1,
         "name": "Lindaflor",
-        "type": "White",
+        "type": "white wine",
         "variaty": "Chardonay",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     },
     {
         "id": 10,
-        "image": "/img/doña paula sauvignon.jpg",
+        "image": "/img/dona paula sauvignon.jpg",
         "quantity": 1,
-        "name": "Doña Paula ",
-        "type": "White",
+        "name": "Dona Paula ",
+        "type": "white wine",
         "variaty": "Sauvignon Blanc",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     },
     {
         "id": 11,
-        "image": "/img/andeluna 1300.webp",
+        "image": "/img/andeluna 1300.jpg",
         "quantity": 1,
         "name": "Andeluna 1300",
-        "type": "white",
+        "type": "white wine",
         "variaty": "Sauvignon Blanc",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
@@ -114,14 +114,14 @@
         "image": "/img/casa boer white.jpg",
         "quantity": 1,
         "name": "Casa Boher",
-        "type": "white",
+        "type": "white wine",
         "variaty": "Sauvignon Blanc",
         "price": 1000,
         "description": "es un vino que refleja su amor por la buena uva"
     },
     {
         "id": 13,
-        "image": "/img/kaiken estate.webp",
+        "image": "/img/kaiken rose.jpg",
         "quantity": 1,
         "name": "Kaiken Estate",
         "type": "rosé",
@@ -131,7 +131,7 @@
     },
     {
         "id": 14,
-        "image": "/img/punto final.jpg",
+        "image": "/img/punto final rose.jpg",
         "quantity": 1,
         "name": "Punto Final",
         "type": "rosé",
@@ -161,7 +161,7 @@
     },
     {
         "id": 17,
-        "image": "/img/doña paula rose.jpg",
+        "image": "/img/dona paula rose.jpg",
         "quantity": 1,
         "name": "Doña Paula",
         "type": "rosé",

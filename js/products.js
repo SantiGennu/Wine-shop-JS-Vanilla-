@@ -12,6 +12,7 @@ class Wines {
 }
 
 
+
 const wine1 = new Wines(1, "/img/alamos malbec.jpg", 1, "Alamos", "White", "malbec", 1000, "es un vino que refleja su amor por la buena uva");
 const wine2 = new Wines(2, "/img/alamos malbec.jpg", 1, "Emilia", "Rosé", "malbec", 1200, "es un vino que refleja su amor por la buena uva");
 const wine3 = new Wines(3, "/img/alamos malbec.jpg", 1, "Estiba", "Red", "Cabernet Sauvignon", 800, "es un vino que refleja su amor por la buena uva");
@@ -27,112 +28,6 @@ const wine10 = new Wines(10, "/img/alamos malbec.jpg", 1, "Hormiga negra", "Red 
 let wineList = [wine1, wine2, wine3, wine4, wine5, wine6, wine7, wine8, wine9, wine10]
 
 
-const carro = `[
-    {
-        "id": 1,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 2,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 3,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 4,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 5,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 6,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 7,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 8,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 9,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    },
-    {
-        "id": 10,
-        "image": "/img/alamos malbec.jpg",
-        "quantity": 1,
-        "name": "Alamos",
-        "type": "White",
-        "variaty": "malbec",
-        "price": 1000,
-        "description": "es un vino que refleja su amor por la buena uva"
-    }
-]`
-
-const jsonData = JSON.parse(carro)
 
 
-
-
-localStorage.setItem("wine", JSON.stringify(jsonData))
+localStorage.setItem("wine", JSON.stringify(wineList))
