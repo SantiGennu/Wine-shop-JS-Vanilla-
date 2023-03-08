@@ -8,11 +8,16 @@ let buttons = document.querySelectorAll(".button-value")
 let cards = document.querySelectorAll(".card")
 
 
+<<<<<<< HEAD
 const getDataFromJson = async () => {
+=======
+const getDataFromJson = async()=> {
+>>>>>>> c377c89d3334eb004cae8063fd415e0caccf4e61
     try {
         const response = await fetch("products.json")
         const data = await response.json()
         return data
+<<<<<<< HEAD
 
     } catch (error) {
         console.log("Tuvimos un error al obtener el .JSON", error)
@@ -21,6 +26,12 @@ const getDataFromJson = async () => {
 
 const wine = getDataFromJson()
 console.log(wine)
+=======
+    } catch (error) {
+        console.log("Tuvimos un error al obtener el .JSON",error)
+    }
+}
+>>>>>>> c377c89d3334eb004cae8063fd415e0caccf4e61
 
 // const showProducts = async () => {
 //     const response = await fetch("../products.json")
@@ -239,10 +250,14 @@ async function showProducts(data) {
 
 }
 
+<<<<<<< HEAD
 showProducts(wine)
 console.log(wine)
 
 async function addToCart(item) {
+=======
+showProducts(getDataFromJson())
+>>>>>>> c377c89d3334eb004cae8063fd415e0caccf4e61
 
     const wineList = await wine
     const add = wineList.find(wine => wine.id === item.id)
