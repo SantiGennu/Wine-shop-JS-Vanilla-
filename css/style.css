@@ -9,6 +9,7 @@ h3 {
     justify-content: center;
 }
 
+
 .cards {
     padding: 20px;
     margin-bottom: 20px;
@@ -22,6 +23,10 @@ h3 {
 
 }
 
+.carousel-inner {
+    max-height: 39rem;
+
+}
 
 body {
     background-color: #f1fffe9d;
@@ -97,19 +102,15 @@ body {
 }
 
 
+.plus,
 .minus {
     background-color: rgb(69, 179, 179);
     height: max-content;
     border-radius: 50%;
 }
 
-.plus {
-    background-color: rgb(69, 179, 179);
-    height: max-content;
-    border-radius: 50%;
-}
-
-.modal-header {
+.modal-header,
+.modal-footer {
     background-color: rgba(0, 0, 0, 0.816);
 }
 
@@ -117,29 +118,17 @@ body {
     color: white;
 }
 
-.modal-footer {
-    background-color: rgba(0, 0, 0, 0.816);
-}
 
 .modal-footer .priceProduct {
     color: white;
 }
 
-.btn-close {
-    background-color: rgb(69, 179, 179);
-}
-
-#button {
-    background-color: rgb(69, 179, 179);
-
-
-
-}
-
-
+.btn-close,
+#button,
 #button:hover {
     background-color: rgb(69, 179, 179);
 }
+
 
 div ul li #button {
     -webkit-box-shadow: none;
@@ -201,15 +190,12 @@ a.nav-link {
 
 }
 
-#price {
-    display: flex;
-    justify-content: center;
-}
-
+#price,
 #variaty {
     display: flex;
     justify-content: center;
 }
+
 
 #container-cards {
     display: flex;
@@ -263,13 +249,11 @@ a.nav-link {
     display: none;
 }
 
-.minus {
-    cursor: pointer
-}
-
+.minus,
 .plus {
     cursor: pointer
 }
+
 
 .description h1 {
     background-color: black;
@@ -313,18 +297,12 @@ main {
     border: 1px solid #858C94;
 }
 
-#form button {
-    background-color: rgb(69, 179, 179);
-    margin: auto;
-    color: white !important;
-
-}
-
-
+#form button,
 #contact {
     background-color: rgb(69, 179, 179);
     margin: auto;
     color: white !important;
+
 }
 
 

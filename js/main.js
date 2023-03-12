@@ -55,7 +55,7 @@ async function showProducts(data) {
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: 'Your flight have been added to the Shopping cart',
+                title: 'Your wine have been added to the Shopping cart',
                 showConfirmButton: false,
                 timer: 1500,
             })
